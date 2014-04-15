@@ -6,8 +6,8 @@
     <ProjectGuid>{55816CFB-48B5-4A7F-BFD0-8DD5BA4031B9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Qas.EmailValidation.Tests</RootNamespace>
-    <AssemblyName>Qas.EmailValidation.Tests</AssemblyName>
+    <RootNamespace>Experian.EmailValidation.Tests</RootNamespace>
+    <AssemblyName>Experian.EmailValidation.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -54,9 +54,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Qas.EmailValidation\Qas.EmailValidation.csproj">
+    <ProjectReference Include="..\Experian.EmailValidation\Experian.EmailValidation.csproj">
       <Project>{4887ac5a-cc8e-4658-ae18-aca51c7a9490}</Project>
-      <Name>Qas.EmailValidation</Name>
+      <Name>Experian.EmailValidation</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

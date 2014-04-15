@@ -7,8 +7,8 @@
     <ProjectGuid>{4887AC5A-CC8E-4658-AE18-ACA51C7A9490}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Qas.EmailValidation</RootNamespace>
-    <AssemblyName>Qas.EmailValidation</AssemblyName>
+    <RootNamespace>Experian.EmailValidation</RootNamespace>
+    <AssemblyName>Experian.EmailValidation</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

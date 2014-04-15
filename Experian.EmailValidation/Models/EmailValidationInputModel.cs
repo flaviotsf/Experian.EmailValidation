@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace Qas.EmailValidation.Models
+namespace Experian.EmailValidation.Models
 {
     /// <summary>
     ///     Simple definition of the service input

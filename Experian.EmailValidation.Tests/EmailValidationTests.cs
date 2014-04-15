@@ -1,7 +1,7 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Qas.EmailValidation.Models;
+using Experian.EmailValidation.Models;
 
-namespace Qas.EmailValidation.Tests
+namespace Experian.EmailValidation.Tests
 {
     [TestClass]
     public class EmailValidationTests

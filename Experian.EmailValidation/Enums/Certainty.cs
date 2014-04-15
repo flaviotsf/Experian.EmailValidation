@@ -1,4 +1,4 @@
-﻿namespace Qas.EmailValidation.Enums
+﻿namespace Experian.EmailValidation.Enums
 {
     /// <summary>
     ///     All possible return certainties from the QAS API

@@ -5,13 +5,13 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 
-[assembly: AssemblyTitle("Qas.EmailValidation.Tests")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("Experian.EmailValidation")]
+[assembly: AssemblyDescription("Email Validation Library for QAS")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Qas.EmailValidation.Tests")]
+[assembly: AssemblyProduct("Experian.EmailValidation")]
 [assembly: AssemblyCopyright("Copyright ©  2014")]
-[assembly: AssemblyTrademark("")]
+[assembly: AssemblyTrademark("ASTD")]
 [assembly: AssemblyCulture("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible 
@@ -22,7 +22,7 @@ using System.Runtime.InteropServices;
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
 
-[assembly: Guid("5dbc85e1-3b9d-4fb0-a81b-3d91e6402dc8")]
+[assembly: Guid("7c0f65e9-b37e-4861-85da-196e9e410a57")]
 
 // Version information for an assembly consists of the following four values:
 //

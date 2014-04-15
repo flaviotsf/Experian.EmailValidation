@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
-using Qas.EmailValidation.Enums;
+using Experian.EmailValidation.Enums;
 
-namespace Qas.EmailValidation.Models
+namespace Experian.EmailValidation.Models
 {
     public class EmailValidationOutputModel
     {

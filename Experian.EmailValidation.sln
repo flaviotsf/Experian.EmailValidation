@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Qas.EmailValidation", "Qas.EmailValidation\Qas.EmailValidation.csproj", "{4887AC5A-CC8E-4658-AE18-ACA51C7A9490}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Experian.EmailValidation", "Experian.EmailValidation\Experian.EmailValidation.csproj", "{4887AC5A-CC8E-4658-AE18-ACA51C7A9490}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Qas.EmailValidation.Tests", "Qas.EmailValidation.Tests\Qas.EmailValidation.Tests.csproj", "{55816CFB-48B5-4A7F-BFD0-8DD5BA4031B9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Experian.EmailValidation.Tests", "Experian.EmailValidation.Tests\Experian.EmailValidation.Tests.csproj", "{55816CFB-48B5-4A7F-BFD0-8DD5BA4031B9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Threading;
 
-namespace Qas.EmailValidation.Helpers
+namespace Experian.EmailValidation.Helpers
 {
     // Credits to http://stackoverflow.com/questions/1563191/c-sharp-cleanest-way-to-write-retry-logic
     public static class Retry

@@ -3,11 +3,11 @@ using System.IO;
 using System.Net;
 using System.Text;
 using Newtonsoft.Json;
-using Qas.EmailValidation.Enums;
-using Qas.EmailValidation.Helpers;
-using Qas.EmailValidation.Models;
+using Experian.EmailValidation.Enums;
+using Experian.EmailValidation.Helpers;
+using Experian.EmailValidation.Models;
 
-namespace Qas.EmailValidation
+namespace Experian.EmailValidation
 {
     /// <summary>
     ///     Main validation class
