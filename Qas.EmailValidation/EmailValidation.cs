@@ -10,13 +10,14 @@ using Qas.EmailValidation.Models;
 namespace Qas.EmailValidation
 {
     /// <summary>
-    /// Main validation class
-    /// /// </summary>
+    ///     Main validation class
+    ///     ///
+    /// </summary>
     public static class EmailValidation
     {
         public static EmailValidationOutputModel ValidateEmail(string email)
         {
-            var jsonInput = new EmailValidationInputModel { EmailAddress = email };
+            var jsonInput = new EmailValidationInputModel {EmailAddress = email};
             var jsonContent = JsonConvert.SerializeObject(jsonInput, Formatting.None);
             var requestContent = Encoding.UTF8.GetBytes(jsonContent);
             var authenticationRequest =
@@ -34,8 +35,11 @@ namespace Qas.EmailValidation
                     var responseUrl = authenticationResponse.ResponseUri.ToString();
                     try
                     {
-                        var myValidationResult = Retry.Do(() => GetValidationResponseString(responseUrl), TimeSpan.FromMilliseconds(EmailValidaitonSettings.RetryDelayMiliseconds), EmailValidaitonSettings.RetryCount);
-                        var myEmailValidationOutput = JsonConvert.DeserializeObject<EmailValidationOutputModel>(myValidationResult);
+                        var myValidationResult = Retry.Do(() => GetValidationResponseString(responseUrl),
+                            TimeSpan.FromMilliseconds(EmailValidaitonSettings.RetryDelayMiliseconds),
+                            EmailValidaitonSettings.RetryCount);
+                        var myEmailValidationOutput =
+                            JsonConvert.DeserializeObject<EmailValidationOutputModel>(myValidationResult);
                         myEmailValidationOutput.Success = true;
                         return myEmailValidationOutput;
                     }

@@ -1,14 +1,14 @@
 ﻿using System;
 using System.Configuration;
+
 namespace Qas.EmailValidation
 {
     /// <summary>
-    /// This class returns the parameters needed to initialize QAS Email Validation. Make sure you add those two keys to your AppSettings.
+    ///     This class returns the parameters needed to initialize QAS Email Validation. Make sure you add those two keys to
+    ///     your AppSettings.
     /// </summary>
     public static class EmailValidaitonSettings
     {
-
-
         private const string EmailValidationEndpointKey = "Qas.EmailValidation.Endpoint";
 
         private const string AuthTokenKey = "Qas.EmailValidation.AuthToken";
@@ -31,7 +31,9 @@ namespace Qas.EmailValidation
         {
             get
             {
-                return !string.IsNullOrEmpty(ConfigurationManager.AppSettings[RetryDelayKey]) ? Convert.ToInt32(ConfigurationManager.AppSettings[RetryDelayKey]) : 5000;
+                return !string.IsNullOrEmpty(ConfigurationManager.AppSettings[RetryDelayKey])
+                    ? Convert.ToInt32(ConfigurationManager.AppSettings[RetryDelayKey])
+                    : 5000;
             }
         }
 
@@ -39,9 +41,10 @@ namespace Qas.EmailValidation
         {
             get
             {
-                return !string.IsNullOrEmpty(ConfigurationManager.AppSettings[RetryCountKey]) ? Convert.ToInt32(ConfigurationManager.AppSettings[RetryCountKey]) : 5;
+                return !string.IsNullOrEmpty(ConfigurationManager.AppSettings[RetryCountKey])
+                    ? Convert.ToInt32(ConfigurationManager.AppSettings[RetryCountKey])
+                    : 5;
             }
         }
-
     }
 }

@@ -1,6 +1,4 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Qas.EmailValidation.Enums;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Qas.EmailValidation.Models;
 
 namespace Qas.EmailValidation.Tests
@@ -11,7 +9,6 @@ namespace Qas.EmailValidation.Tests
         [TestMethod]
         public void TestEmailValidation()
         {
-
             EmailValidationOutputModel output = null;
 
             // These are invalid emails
@@ -29,7 +26,6 @@ namespace Qas.EmailValidation.Tests
 
             output = EmailValidation.ValidateEmail("john.doe.sampleemail@gmail.com");
             Assert.IsTrue(output.Success && output.IsValidEmail);
-
         }
     }
 }

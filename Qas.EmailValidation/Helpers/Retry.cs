@@ -15,6 +15,7 @@ namespace Qas.EmailValidation.Helpers
                 return null;
             }, retryInterval, retryCount);
         }
+
         public static T Do<T>(Func<T> action, TimeSpan retryInterval, int retryCount = 3)
         {
             var exceptions = new List<Exception>();
