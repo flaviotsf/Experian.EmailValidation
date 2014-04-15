@@ -9,11 +9,14 @@ using Qas.EmailValidation.Models;
 
 namespace Qas.EmailValidation
 {
+    /// <summary>
+    /// Main validation class
+    /// /// </summary>
     public static class EmailValidation
     {
         public static EmailValidationOutputModel ValidateEmail(string email)
         {
-            var jsonInput = new EmailValidationInputModel {EmailAddress = email};
+            var jsonInput = new EmailValidationInputModel { EmailAddress = email };
             var jsonContent = JsonConvert.SerializeObject(jsonInput, Formatting.None);
             var requestContent = Encoding.UTF8.GetBytes(jsonContent);
             var authenticationRequest =

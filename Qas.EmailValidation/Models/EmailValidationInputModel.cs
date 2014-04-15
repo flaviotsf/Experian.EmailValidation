@@ -2,6 +2,9 @@
 
 namespace Qas.EmailValidation.Models
 {
+    /// <summary>
+    /// Simple definition of the service input
+    /// </summary>
     public class EmailValidationInputModel
     {
         [JsonProperty("email")]

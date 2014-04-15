@@ -31,13 +31,7 @@ namespace Qas.EmailValidation
         {
             get
             {
-                if (!string.IsNullOrEmpty(ConfigurationManager.AppSettings[RetryDelayKey]))
-                {
-                    return Convert.ToInt32(ConfigurationManager.AppSettings[RetryDelayKey]);
-                }
-
-                return 5000;
-
+                return !string.IsNullOrEmpty(ConfigurationManager.AppSettings[RetryDelayKey]) ? Convert.ToInt32(ConfigurationManager.AppSettings[RetryDelayKey]) : 5000;
             }
         }
 
@@ -45,12 +39,7 @@ namespace Qas.EmailValidation
         {
             get
             {
-                if (!string.IsNullOrEmpty(ConfigurationManager.AppSettings[RetryCountKey]))
-                {
-                    return Convert.ToInt32(ConfigurationManager.AppSettings[RetryCountKey]);
-                }
-
-                return 5;
+                return !string.IsNullOrEmpty(ConfigurationManager.AppSettings[RetryCountKey]) ? Convert.ToInt32(ConfigurationManager.AppSettings[RetryCountKey]) : 5;
             }
         }
 
