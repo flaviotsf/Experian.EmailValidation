@@ -16,7 +16,7 @@ namespace Experian.EmailValidation.Models
         ///     Certainty is converted from a string back to an enumeration. Refer to QAS documentation for different statuses
         ///     (from API)
         /// </summary>
-        [JsonConverter(typeof (StringEnumConverter))]
+        [JsonConverter(typeof(StringEnumConverter))]
         public Certainty Certainty { get; set; }
 
         /// <summary>
@@ -43,6 +43,11 @@ namespace Experian.EmailValidation.Models
         public bool IsValidEmail
         {
             get { return Certainty == Certainty.Unknown || Certainty == Certainty.Verified; }
+        }
+
+        public EmailValidationOutputModel()
+        {
+            Corrections = new List<string>();
         }
     }
 }
