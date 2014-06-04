@@ -13,3 +13,10 @@ In order to use it, you need to ensure you have a few keys ob your app / web.con
     <add key="Experian.EmailValidation.AuthToken" value="XXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"/>
     <add key="Experian.EmailValidation.Retry.Delay" value="5000" />
     <add key="Experian.EmailValidation.Retry.Count" value="5" />
+
+To call the library simply use
+
+     EmailValidation.ValidateEmail("testingaccount@gmail.com");
+     
+     
+A property IsValidEmail was added that return true/false depending on the QAS Certainty Status. It will return true for Valid and Unkown emails.
